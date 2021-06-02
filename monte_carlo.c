@@ -42,7 +42,7 @@ int main(void) {
 float mc_pi(int n)
 {
   int i,circle=0;
-  float x,y,dist,pi;
+  float x,y,dist,pi1;
   for(i=1; i<=n; i++)
   { 
     x = frandom();
@@ -51,8 +51,8 @@ float mc_pi(int n)
     if (dist<=1)
     circle++;
   }
-  pi = (float)4*circle/n;
-  return pi;
+  pi1 = (float)4*circle/n;
+  return pi1;
 }
 
 
