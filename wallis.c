@@ -27,14 +27,11 @@ int main(void) {
 float wallis_pi(int n)
 {
 	int i;
-	float prod,pi;
-	if(n==0)
-		return 0;
-	prod = (float)4/3;
-	for(i=2;i<=n;i++)
+	float prod=1.00,pi1;
+	for(i=0;i<=n;i++)
 	{
 		prod*=(float)(4*i*i)/(4*i*i-1);
 	}	
-	pi=prod*2;
-	return pi;
+	pi1=prod*2;
+	return pi1;
 }
